@@ -1,0 +1,143 @@
+/* Görev kartları */
+.task-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  margin: 10px;
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.task-item.Tamamlandı {
+  background-color: #e6f9e6;
+}
+
+.task-item.Yapılıyor {
+  background-color: #e6f0ff;
+}
+
+.task-item.Yapılacak {
+  background-color: #fff2e6;
+}
+
+.task-main h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.task-main p {
+  margin: 6px 0;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.badge.Tamamlandı {
+  background-color: #3ec476;
+  color: white;
+}
+
+.badge.Yapılıyor {
+  background-color: #43abf1;
+  color: white;
+}
+
+.badge.Yapılacak {
+  background-color: #ffbe54;
+  color: white;
+}
+
+/* Yalnızca ikon içeren buton grubu */
+.task-actions-icon-only {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.task-actions-icon-only button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.2s;
+}
+
+
+
+/* Diğer stiller */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Başlık ve içerik ortalanır */
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center; /* Butonları ortaya hizalar */
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #eee;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.filter-buttons button.active {
+  background-color: #eca7a7;
+  color: white;
+}
+
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.tags {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #656464;
+}
+
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.task-form input,
+.task-form select,
+.task-form button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.task-form button {
+  background-color: #eca7a7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #e35757;
+}
